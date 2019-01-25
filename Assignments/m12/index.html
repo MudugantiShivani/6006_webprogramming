@@ -1,0 +1,47 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+
+</head>
+
+
+
+<script>
+function validate() {
+var x= document.getElementById("password");
+if(x.value=="shivani") return;
+else alert("wrong password");
+}
+function showMessage(){
+            var message = document.getElementById("message").value;
+            display_message.innerHTML= message;
+        }
+</script>
+<form id="myform" action="#" method="get">
+  <fieldset>
+
+    <legend><strong>Web Programming</strong></legend>
+
+    <p>
+      <label for="author">Name <abbr title="Required">*</abbr></label>
+      <input name="author" id="author" value="" required="required" aria-required="true" pattern="^([- \w\d\u00c0-\u024f]+)$" title="Your name (no special characters, diacritics are okay)" type="text" spellcheck="false" size="20" />
+    </p>
+	<p>
+      <label for="text">Comment <abbr title="Required">*</abbr></label>
+      <textarea name="text" id="message" required="required" aria-required="true" title="Your comment" spellcheck="true" cols="40" rows="10"></textarea>
+
+    </p>
+    password : <input type= "password" id="password" onblur="validate()"> <br><br>
+  </fieldset>
+
+    <input type="submit" onclick="showMessage()" value="submit" />
+<p> Comments: <span id = "display_message"></span> </p>
+  <p><span id='display'></span></p>
+
+</form>
+</html>

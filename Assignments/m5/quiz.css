@@ -1,0 +1,24 @@
+.body{
+	border:2px solid black;
+	padding:20px;
+}
+.row{
+	text-align:center;
+	border:2px solid black;
+	padding:20px;
+}
+.hint{
+	margin-left: 30px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	background-color: #ffff005e;
+	border:2px solid black;
+}
+.incorrect{
+	background-color: #ff000052;
+	border:2px solid red;
+}
+.correct{
+	background-color: #0080004f;
+	border: 2px solid green;
+}
